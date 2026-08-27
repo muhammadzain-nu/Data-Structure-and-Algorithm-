@@ -25,6 +25,11 @@ for(int i=0;i<row;i++){
 		cout<<matrix[i][j];
 	}
 	cout<<"\n";
+}for(int i=0;i<row;i++){
+	
+	delete [] matrix[i];
 }
+delete [] matrix;
+	
 	return 0;
 }
