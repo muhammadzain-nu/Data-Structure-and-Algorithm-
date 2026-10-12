@@ -2,11 +2,11 @@
 using namespace std;
 int display(int n, int j){
 	if(j==5){
-		return 1;
+		return 0;
 	}
   n=n*2;
   j++;
-  display(n, j);
+  return n+display(n, j);
   cout<<"Day: "<< j<<": "<< n<<endl;
 }
 int main(){
